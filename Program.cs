@@ -5,18 +5,19 @@ namespace projeeeeee
 	class Program
 	{
 
-
+/*
 		void kitap_ekleme();
 		void kitap_listeleme();
 		void kitap_silme();
 		int koltuk_islemleri();
-		int standartsap(int a[100], int t, int w);
-
+		int standartsap(int a[] , int t, int w);
+		*/
+		// **********HATA************* FONKSİYONLARI BÖYLE TANIMLAMAMIZ GEREKLİ DEĞİL GALİBA
 		struct ogrenci
 		{
 			char isim;
 			char soyisim;
-			int no;
+			int	 no;
 		};
 
 
@@ -34,7 +35,7 @@ namespace projeeeeee
 
 			Console.WriteLine("Robot Olmadiginizi Belirtmek Icin Lutfen 1e Basiniz...\n");
 
-			abcd = Convert.ToInt32(Console.ReadLine());
+			abcd = Convert.ToInt32(Console.ReadLine());//abcd değişkeni  case içindeki seçimi sağllıyoor
 
 			switch (abcd)
 			{
@@ -65,7 +66,7 @@ namespace projeeeeee
 								if (sec == 1)
 								{
 									abc = 1;
-									while (k != 2 && abc != 3)
+									while (k != 2 && abc != 3)//******HATA*******HATA ****  k değişkeni tanımlanmış fakat başlangıç değeri ataanmamış
 									{
 
 
@@ -221,7 +222,7 @@ namespace projeeeeee
 		}
 
 
-		int standartsap(int[100] a, int t, int w)
+		int standartsap(int[] a, int t, int w)
 		{
 			int p = 0;
 
